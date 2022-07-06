@@ -4,7 +4,7 @@ import time
 from pynput import keyboard
 
 
-arduino = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_558383233353512161A1-if00', 9600, timeout=1, parity=serial.PARITY_ODD)
+arduino = serial.Serial('/dev/serial/by-id/', 9600, timeout=1, parity=serial.PARITY_ODD) #add path
 
 print('Running...')
 print('(Ctr+C to Exit)')
